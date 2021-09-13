@@ -494,7 +494,7 @@ class JanusPlugin {
       bool videoRecv: true,
       bool audioSend: true,
       bool videoSend: true}) async {
-    dynamic offerOptions = {};
+    Map<String, dynamic> offerOptions = {};
     if (context!.isUnifiedPlan) {
       await prepareTranscievers(
           audioRecv: audioRecv,
